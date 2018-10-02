@@ -3,10 +3,10 @@ var map;
 var marker;
 
 function initializeMap() {
-  myLatlng = new google.maps.LatLng(48.850622, 37.607345);
+  myLatlng = new google.maps.LatLng(50.439564, 30.5147567);
 
   var mapOptions = {
-    zoom: 17,
+    zoom: 18,
     center: myLatlng,
     mapTypeId: google.maps.MapTypeId.ROADMAP,
     scrollwheel: false,
