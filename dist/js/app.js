@@ -15,7 +15,7 @@ function initializeMap() {
   map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
 
   var infowindow = new google.maps.InfoWindow({
-    content: '<h5>Artikus</h5><p>вул. Льва Толстого, 3</p>'
+    content: '<h5>Artikus</h5><p>вул. Льва Товстого, 3</p>'
   });
 
   marker = new google.maps.Marker({
