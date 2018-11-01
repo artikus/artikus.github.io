@@ -12,6 +12,7 @@
         integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
   <link href='//fonts.googleapis.com/css?family=Quicksand:400,700' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="dist/css/aos.css">
   <link rel="stylesheet" href="dist/css/main.css">
 </head>
 
@@ -24,7 +25,7 @@
         <h1 class="cover-heading">Artikus</h1>
         <p class="lead">Ми будуємо програмне забезпечення і веб-сайти,<br> які допомагають бізнесу процвітати</p>
         <p class="lead">
-          <a href="#section-about" class="btn btn-lg btn-secondary">Дiзнатися бiльше</a>
+          <a href="#section-about" class="btn btn-lg btn-secondary scroll-to">Дiзнатися бiльше</a>
         </p>
       </div>
     </div>
@@ -32,19 +33,22 @@
 </section>
 
 <section class="section-navigation">
-  <nav class="navbar sticky-top navbar-toggleable-md navbar-light bg-faded">
+  <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
     <div class="container">
-      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-              data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-              aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <a class="navbar-brand" href="/">Artikus</a>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item"><a class="nav-link" href="#section-about">Що ми робимо</a></li>
-          <li class="nav-item"><a class="nav-link" href="#section-how-it-works">Як ми працюємо</a></li>
-          <li class="nav-item"><a class="nav-link" href="#section-contacts">Контакти</a></li>
+      <div class="navbar-header">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="/">Artikus</a>
+      </div>
+      <div class="navbar-collapse collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item"><a class="nav-link scroll-to" href="#section-about">Що ми робимо</a></li>
+          <li class="nav-item"><a class="nav-link scroll-to" href="#section-how-it-works">Як ми працюємо</a></li>
+          <li class="nav-item"><a class="nav-link scroll-to" href="#section-audit">Аудит</a></li>
+          <li class="nav-item"><a class="nav-link scroll-to" href="#section-contacts">Контакти</a></li>
         </ul>
       </div>
     </div>
@@ -64,7 +68,7 @@
     </div>
     <div class="row" style="margin-top: 30px">
       <div class="col-md-6 col-sm-6">
-        <div class="about-box">
+        <div class="about-box" data-aos="fade-up" data-aos-duration="1000">
           <div class="about-box-icon">
             <i class="fa fa-cogs"></i>
           </div>
@@ -74,7 +78,7 @@
         </div>
       </div>
       <div class="col-md-6 col-sm-6">
-        <div class="about-box">
+        <div class="about-box" data-aos="fade-up" data-aos-duration="1500">
           <div class="about-box-icon">
             <i class="fa fa-database"></i>
           </div>
@@ -84,7 +88,7 @@
         </div>
       </div>
       <div class="col-md-6 col-sm-6">
-        <div class="about-box">
+        <div class="about-box" data-aos="fade-up" data-aos-duration="2000">
           <div class="about-box-icon">
             <i class="fa fa-users"></i>
           </div>
@@ -94,7 +98,7 @@
         </div>
       </div>
       <div class="col-md-6 col-sm-6">
-        <div class="about-box">
+        <div class="about-box" data-aos="fade-up" data-aos-duration="2500">
           <div class="about-box-icon">
             <i class="fa fa-mobile"></i>
           </div>
@@ -104,7 +108,7 @@
         </div>
       </div>
       <div class="col-md-6 col-sm-6">
-        <div class="about-box">
+        <div class="about-box" data-aos="fade-up" data-aos-duration="3000">
           <div class="about-box-icon">
             <i class="fa fa-thumbs-up"></i>
           </div>
@@ -129,14 +133,110 @@
       </div>
     </div>
   </div>
+</section>
 
+<section>
   <div class="services-section-2">
     <div class="container">
       <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-md-12 text-center" data-aos="zoom-in" data-aos-duration="1000">
           <h1>Готові розпочати?</h1>
           <a class="btn btn-lg btn-theme-color" href="mailto:dmitryteslitsky@gmail.com">Зв'язатися з нами</a>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section-about" id="section-audit">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <h2 class="section-heading">Аудит сайту</h2>
+        <p>Після створення сайту клієнтові необхідно бути впевненим,
+          що розробники створили сайт професійно, не порушуючи всіх технічних вимог,
+          без помилок, без впровадження зайвого або забороненого коду.</p>
+        <p> Послуга аудиту сайту надає можливість замовити перевірку вашого сайту,
+          після створення іншими розробниками, щоб в подальшому не отримати
+          негативний результат роботи сайту.</p>
+      </div>
+    </div>
+    <div class="row" style="margin-top: 30px">
+      <div class="col-md-6 col-sm-6">
+        <div class="about-box" data-aos="fade-up" data-aos-duration="1000">
+          <div class="about-box-icon">
+            <i class="fa fa-cogs"></i>
+          </div>
+          <div class="about-box-text">
+            <h4>Технічний аудит будь-яких сайтів, додатків на наявність технічних і логічних помилок, багів</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="about-box" data-aos="fade-up" data-aos-duration="1500">
+          <div class="about-box-icon">
+            <i class="fa fa-bug"></i>
+          </div>
+          <div class="about-box-text">
+            <h4>Складання списку (баг-листа) всіх технічних помилок для передачі розробникам для усунення</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="about-box" data-aos="fade-up" data-aos-duration="2000">
+          <div class="about-box-icon">
+            <i class="fa fa-bullseye"></i>
+          </div>
+          <div class="about-box-text">
+            <h4>SEO-аудит сайтів на відповідність усім правилам пошукових машин Google і Яндекс для подальшого просування</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="about-box" data-aos="fade-up" data-aos-duration="2500">
+          <div class="about-box-icon">
+            <i class="fa fa-mobile"></i>
+          </div>
+          <div class="about-box-text">
+            <h4>Аналіз інтерфейсів для визначення зручності користування сайтом</h4>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6">
+        <div class="about-box" data-aos="fade-up" data-aos-duration="3000">
+          <div class="about-box-icon">
+            <i class="fa fa-thumbs-up"></i>
+          </div>
+          <div class="about-box-text">
+            <h4>тощо</h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <div style="margin: 40px 0 20px">
+          <a class="btn btn-lg btn-success" target="_blank" href="https://api.fondy.eu/s/JLqfhc">
+            <i class="fa fa-credit-card"></i> Замовити аудит
+          </a>
+        </div>
+
+        <div class="pay-methods">
+          <div class="pay-methods-img">
+            <img src="./dist/images/visa.svg" alt="visa logo">
+          </div>
+          <div class="pay-methods-img">
+            <img src="./dist/images/mastercard.svg" alt="mastercard logo">
+          </div>
+          <div class="pay-methods-img">
+            <img src="./dist/images/fondy-logo.svg" alt="fondy logo">
+          </div>
+        </div>
+
+        <p>Протягом 1 робочого дня запит буде опрацьовано та доставлено звіт на вказану адресу електронної пошти.</p>
+        <p>Сплатити аудит ви можете будь-якою банківською карткою Visa/Mastercard.
+          Це безпечно завдяки системі безпеки електронних платежів від Fondy.</p>
+        <p>Повернення коштів не передбачено.</p>
+        <p>Ми не розголошуємо ваші особисті дані третім особам.</p>
       </div>
     </div>
   </div>
@@ -150,6 +250,8 @@
         <p>Пошта: <a href="mailto:dmitryteslitsky@gmail.com">dmitryteslitsky@gmail.com</a></p>
         <p>Телефон: +380 (97) 893 60 54</p>
         <p>Адреса: Україна, Київ, вул. Льва Товстого, 3</p>
+        <p>ФО-П Теслицький Дмитро Iгорович, IНН 3282800711<br>
+           р/р 26001053611726 в ПАТ КБ Приватбанк м. Краматорськ МФО 335548</p>
       </div>
     </div>
   </div>
@@ -167,9 +269,15 @@
   </div>
 </footer>
 
+<button id="up-btn"><i class="fa fa-angle-up"></i></button>
+
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD0SRiQIqX5M61WAiIkLZzQV95qBn7Bl8A"></script>
 <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
 <script src="dist/js/ie10-viewport-bug-workaround.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+<script src="dist/js/aos.js"></script>
 <script src="dist/js/app.js"></script>
 </body>
 </html>
