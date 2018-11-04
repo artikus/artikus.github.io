@@ -60,6 +60,12 @@ gulp.task('images', () => {
     .pipe(gulp.dest('dist/images'));
 });
 
+gulp.task('files', () => {
+  gulp
+    .src('files/**/*')
+    .pipe(gulp.dest('dist'));
+});
+
 gulp.task('css:minify', () =>
   gulp
     .src('src/css/**/*.css')
@@ -104,6 +110,7 @@ gulp.task('deploy', () =>
 gulp.task('build', callback => {
   runSequence(
     'clean:dist',
+    'files',
     'sass',
     'css:minify',
     ['useref', 'js', 'js:vendor', 'images'],
