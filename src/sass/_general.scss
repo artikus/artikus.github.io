@@ -19,7 +19,7 @@ h4 {
   vertical-align: middle;
   z-index: 1;
   box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
-  background: #444 url('../images/499631282.jpg') no-repeat fixed center center;
+  background: #444 url('../images/499631282.jpg') no-repeat fixed left 0;
   background-size: cover;
 }
 
@@ -69,17 +69,6 @@ h4 {
   padding: .75rem 1.25rem;
 }
 
-@media (min-width: 40em) {
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  
-  /* Handle the widths */
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
-}
 
 .section-about,
 .section-how-it-works,
@@ -119,8 +108,7 @@ h4 {
 .services-section-2 {
   padding: 90px 0;
   background-size: cover;
-  background: url("../images/section-2-bg-min.png") no-repeat left top;
-  background-attachment: fixed;
+  background: url("../images/section-2-bg-min.png") no-repeat left 0;
   width: 100%;
   height: auto;
   overflow: hidden;
@@ -128,7 +116,7 @@ h4 {
   z-index: 1;
   display: block;
   position: relative;
-  margin: 80px 0;
+  margin: 80px 0 0;
 }
 
 .services-section-2:before {
@@ -162,12 +150,8 @@ h4 {
   text-align: center;
   white-space: nowrap;
   vertical-align: middle;
-  -ms-touch-action: manipulation;
   touch-action: manipulation;
   cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
   user-select: none;
   background-image: none;
   border: 1px solid transparent;
@@ -196,6 +180,7 @@ h4 {
 
 .section-navigation {
   height: 56px;
+  margin-bottom: 1em;
 }
 
 .section-navigation > .navbar {
@@ -223,10 +208,6 @@ h4 {
   background: rgba(156, 156, 221, .75);
   border: 0;
   padding: 0 10px;
-  -webkit-transition: background .3s;
-  -moz-transition: background .3s;
-  -ms-transition: background .3s;
-  -o-transition: background .3s;
   transition: background .3s;
 }
 
@@ -245,11 +226,6 @@ h4 {
   display: -ms-flexbox;
   display: flex;
   margin: 8px;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
   justify-content: center;
-  -webkit-align-content: center;
-  -ms-flex-line-pack: center;
   align-content: center;
 }
-

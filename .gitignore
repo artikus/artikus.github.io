@@ -1,4 +1,4 @@
 .idea
 node_modules
-# dist not excluded because we need deploy to GitHub Pages
-#dist
+dist
+.publish
