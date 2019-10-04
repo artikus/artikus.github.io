@@ -1,7 +1,7 @@
 /* global $, google, AOS */
 
 function initializeMap() {
-  const myLatLng = new google.maps.LatLng(50.466109, 30.5051482);
+  const myLatLng = new google.maps.LatLng(50.4664452, 30.50814);
   const mapOptions = {
     zoom: 18,
     center: myLatLng,
