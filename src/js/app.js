@@ -51,6 +51,8 @@ google.maps.event.addDomListener(window, 'load', initializeMap);
 $(document).ready(function() {
   const e = $('.section-navigation');
   const t = e.offset().top;
+  const currentDate = new Date();
+  $('#year').text(currentDate.getFullYear());
 
   $(window).on('scroll', () => {
     const scrolled = $(window).scrollTop();
